@@ -33,10 +33,10 @@ function init() {
     }
 
     function getPositionInText(position, text) {
-        for(let i = 0; i < text.length; i += 1) {
+        for (let i = 0; i < text.length; i += 1) {
             testElement.innerText = text.substring(0, i);
             if (testElement.clientWidth > position) {
-                return i-1;
+                return i - 1;
             }
         }
         return text.length;
